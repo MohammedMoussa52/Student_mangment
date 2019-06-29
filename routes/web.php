@@ -23,3 +23,7 @@ Route::group(['middleware' => ['admin']], function () {
 Route::get('/home', 'HomeController@index')->name('home');
 Route::get('profile','UserController@profile');
 Route::post('profile','UserController@update_avatar');
+Route::get('courses/create','CourseController@create');
+Route::post('/courses/join','CourseController@join');
+Route::get('courses','CourseController@index');
+Route::delete('/course/delete/{id}','CourseController@destroy');

@@ -11,9 +11,14 @@
         <div class="col-md-8 col-md-offset-2">
             <div class="panel panel-default">
                 <div class="panel-heading">Dashboard</div>
-
                 <div class="panel-body">
-                    <a href="{{url('admin/routes')}}">Admin</a>
+                  <a href="{{url('courses')}}">Courses List</a>
+                </div>
+                <div class="panel-body">
+                  <a href="{{url('/courses/create')}}">Join Course</a>
+                </div>
+                <div class="panel-body">
+                  <a href="{{url('admin/routes')}}">Admin</a>
                 </div>
             </div>
         </div>
